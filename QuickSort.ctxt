@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=QuickSort
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ QuickSort\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=QuickSort()
+comment2.params=
+comment2.target=void\ sort()
+comment3.params=left\ right
+comment3.target=void\ quicksort(int,\ int)
+comment4.params=left\ right
+comment4.target=int\ seperate(int,\ int)
+comment5.params=
+comment5.target=void\ test()
+numComments=6

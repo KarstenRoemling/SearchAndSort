@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=BinaereSuche
+comment0.text=\r\n\ Klasse\ BinaereSuche\r\n\ Unterklasse\ abgeleitet\ von\ Oberklasse\ Suche\ f\u00FCr\ die\ Implementierung\ der\ binaeren\ Suche.\r\n\ Nutzung\ der\ Datenstruktur\ Array\r\n\ @author\ WK\r\n\ @version\ 2018-03-21\r\n
+comment1.params=
+comment1.target=BinaereSuche()
+comment2.params=num
+comment2.target=int\ search(int)
+comment3.params=num
+comment3.target=int\ searchR(int)
+comment4.params=num\ recursive
+comment4.target=void\ test(int,\ boolean)
+comment5.params=suchzahl\ links\ rechts
+comment5.target=int\ sucheRekursiv(int,\ int,\ int)
+numComments=6

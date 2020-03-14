@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Suchverfahren
+comment0.text=\r\n\ Klasse\ Suche\r\n\ Klase\ Suche\ zum\ Ableiten\ von\ Unterklassen\ f\u00FCr\ lineare\ und\ binaere\ Suche\ mit\ Hilfsmethoden\ f\u00FCr\ die\ drei\ \r\n\ Testf\u00E4lle\ Bestcase,\ Worstcase,\ Averagecase\r\n\ @author\ WK\r\n\ @version\ 2018-03-21\r\n
+comment1.params=pName
+comment1.target=Suchverfahren(java.lang.String)
+comment2.params=recursive
+comment2.target=void\ createTest(boolean)
+comment3.params=num\ result
+comment3.target=void\ out(int,\ int)
+numComments=4
