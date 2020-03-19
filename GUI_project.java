@@ -39,6 +39,7 @@ public class GUI_project extends JFrame {
     private JPanel panel1;
     private JButton qsort;
     private JButton ssort;
+    private JButton sesort;
     private JTextField textfieldLength;
 
     //Constructor 
@@ -234,6 +235,20 @@ public class GUI_project extends JFrame {
                 doSort(3);
             }
         });
+        
+        sesort = new JButton();
+        sesort.setBounds(335,40,110,35);
+        sesort.setBackground(new Color(214,217,223));
+        sesort.setForeground(new Color(0,0,0));
+        sesort.setEnabled(true);
+        sesort.setFont(new Font("sansserif",0,12));
+        sesort.setText("Selection Sort");
+        sesort.setVisible(true);
+        sesort.addActionListener(new ActionListener(){  
+            public void actionPerformed(ActionEvent e){  
+                doSort(6);
+            }
+        });
 
         textfieldLength = new JTextField();
         textfieldLength.setBounds(240,20,40,35);
@@ -260,6 +275,7 @@ public class GUI_project extends JFrame {
         contentPane.add(panel1);
         panel1.add(qsort);
         panel1.add(ssort);
+        panel1.add(sesort);
         contentPane.add(textfieldLength);
 
         //adding panel to JFrame and seting of window position and close operation
@@ -274,15 +290,15 @@ public class GUI_project extends JFrame {
     public void generateMenu(){
         menuBar = new JMenuBar();
 
-        JMenu file = new JMenu("File");
-        JMenu tools = new JMenu("Tools");
-        JMenu help = new JMenu("Help");
+        JMenu file = new JMenu("Datei");
+        JMenu tools = new JMenu("Werkzeuge");
+        JMenu help = new JMenu("Hilfe");
 
-        JMenuItem open = new JMenuItem("Open   ");
-        JMenuItem save = new JMenuItem("Save   ");
-        JMenuItem exit = new JMenuItem("Exit   ");
-        JMenuItem preferences = new JMenuItem("Preferences   ");
-        JMenuItem about = new JMenuItem("About   ");
+        JMenuItem open = new JMenuItem("Öffnen   ");
+        JMenuItem save = new JMenuItem("Speichern   ");
+        JMenuItem exit = new JMenuItem("Beenden   ");
+        JMenuItem preferences = new JMenuItem("Einstellungen   ");
+        JMenuItem about = new JMenuItem("Über das Projekt   ");
 
 
         file.add(open);
@@ -315,7 +331,6 @@ public class GUI_project extends JFrame {
                 break;
             case 2:
                 testSort.MischeArray("worstcase");
-                System.out.println("wc");
                 break;
         }
         int[] array = testSort.getZahlenfeld();
@@ -345,6 +360,9 @@ public class GUI_project extends JFrame {
                 break;
             case 5:
                 verfahren = new InsertionSortLinear();
+                break;
+            case 6:
+                verfahren = new SelectionSort();
                 break;
             default:
                 verfahren = new BubbleSort();
